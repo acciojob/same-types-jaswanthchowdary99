@@ -4,14 +4,6 @@ function isSameType(value1, value2) {
     return true;
   }
 
-  if (!isNaN(value1) && typeof value1 === "string") {
-    value1 = Number(value1);
-  }
-
-  if (!isNaN(value2) && typeof value2 === "string") {
-    value2 = Number(value2);
-  }
-
 	return typeof value1 === typeof value2;
 }
 
